@@ -25,32 +25,35 @@ Sistema de chat inteligente baseado no framework **Agno**, projetado para integr
 
 ## 📅 Fases do Projeto
 
-### Fase 1: Setup & Arquitetura (Atual)
-- [x] Definição da estrutura de pastas.
-- [x] Configuração do ambiente Nix.
-- [x] Scaffold do Backend FastAPI.
-- [x] Integração inicial com Agno Agent e SQLite Storage.
-- [x] Scaffold do Frontend React.
+### Fase 1: Setup & Arquitetura (Concluída)
+- [x] Estrutura de pastas e ambiente Nix.
+- [x] Backend FastAPI e Frontend React.
+- [x] Integração básica Agno + SQLite.
 
-### Fase 2: Agno & Memória
-- [ ] Implementação de lógica de retenção de contexto por `session_id`.
-- [ ] Customização de instruções de sistema e ferramentas (tools) para o agente.
-- [ ] Endpoint de histórico de conversas.
+### Fase 2: Configuração Dinâmica & Agno Core (Em Progresso)
+- [ ] **System Prompt Editor**: Configurar instruções do agente via frontend.
+- [ ] **Model Switcher**: Alternar entre GPT-4, Claude, Gemini via UI.
+- [ ] **Memory Management**: Visualizar e limpar sessões de memória persistente.
+- [ ] **Tools (Function Calling)**: Criar interface para habilitar/desabilitar ferramentas (ex: Busca Web, Shell, Calculadora).
+- [ ] **Knowledge Base (RAG)**: Upload de PDFs e links para o agente consultar.
 
-### Fase 3: Integração WhatsApp
-- [ ] Implementação do Webhook para API Oficial da Meta.
-- [ ] Desenvolvimento da bridge para QR Code (WhatsApp Web).
-- [ ] Sistema de pareamento e status de conexão.
+### Fase 3: Integração Multi-Canal
+- [ ] **WhatsApp Official & QR Code**: Ponte de comunicação via Webhooks.
+- [ ] **Telegram Bot**: Integração nativa com a API de bots do Telegram.
+- [ ] **Unified Inbox**: Testar o mesmo agente em múltiplos canais simultaneamente.
 
-### Fase 4: Interface do Usuário (UI)
-- [ ] Dashboard de monitoramento de conexões.
-- [ ] Interface de chat em tempo real.
-- [ ] Gerenciamento de múltiplas sessões Agno via interface.
+### Fase 4: Monitoramento & Telemetria
+- [ ] Logs de execução das "Tools".
+- [ ] Visualização do grafo de raciocínio do agente.
+- [ ] Exportação de conversas e métricas de custo.
 
-### Fase 5: Testes & Refinamento
-- [ ] Testes de carga e latência.
-- [ ] Hardening de segurança e proteção de tokens.
-- [ ] Documentação final de deploy.
+---
+
+## 🛠 Funcionalidades Agno Implementadas/Planejadas
+- **Agno Memory**: Persistência via SQLite.
+- **Agno Knowledge**: RAG com suporte a vetores (Qdrant/PgVector).
+- **Agno Tools**: Integração com DuckDuckGo, Python Shell e APIs customizadas.
+- **Agno Teams**: Orquestração de múltiplos agentes trabalhando em conjunto.
 
 ---
 
