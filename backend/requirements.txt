@@ -1,0 +1,9 @@
+agno
+fastapi
+uvicorn
+python-multipart
+sqlalchemy
+pydantic-settings
+requests
+python-dotenv
+sqlite-utils
