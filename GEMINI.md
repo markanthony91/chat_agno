@@ -18,5 +18,14 @@ Projeto especializado em testar e implementar as capacidades do framework **Agno
 - **Session IDs:** Mapeados para IDs de chat do WhatsApp/Telegram para continuidade de memória.
 - **Ambiente:** Gerenciado via `shell.nix`.
 
+## Roadmap & Próximos Passos
+- [ ] **Abstração de LLMs:** Implementar fábrica de modelos para suportar Gemini, Claude, Groq e Ollama além da OpenAI.
+- [ ] **RAG com Qdrant:** Configurar Qdrant como Vector Database oficial para a base de conhecimento.
+- [ ] **Infraestrutura com Redis:**
+    - Implementar cache de embeddings para redução de latência e custos.
+    - Utilizar Redis Pub/Sub para gerenciamento de filas de mensagens do WhatsApp/Telegram.
+- [ ] **Streaming de Respostas:** Adicionar suporte a streaming no FastAPI e React.
+- [ ] **Dashboard de Custos:** Monitoramento de uso de tokens por sessão.
+
 ---
 *Última atualização: 27 de Janeiro de 2026*
