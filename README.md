@@ -79,4 +79,9 @@ Sistema de chat inteligente baseado no framework **Agno**, projetado para integr
    ```
 
 ---
+
+## 📚 Documentação
+- [Dossiê: Playbooks em RAG e Agentes](./docs/dossie.md) - Resumo técnico sobre orquestração e comparativo de frameworks.
+
+---
 *Criado como parte do ecossistema de automação inteligente - Janeiro 2026*
